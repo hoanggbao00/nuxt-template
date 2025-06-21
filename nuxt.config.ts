@@ -16,6 +16,11 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/css/tailwind.css'],
+  runtimeConfig: {
+    public: {
+      apiEndpoint: process.env.NUXT_PUBLIC_API_ENDPOINT,
+    },
+  },
   future: {
     compatibilityVersion: 4,
   },

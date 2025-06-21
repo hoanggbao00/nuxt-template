@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-const { title, description } = getHomepageMeta()
+const meta = getHomepageMeta()
 
-useHead({ title, description })
+useHead(useMeta(meta))
 </script>
 
 <template>
