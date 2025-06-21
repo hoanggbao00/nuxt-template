@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "antfu.goto-alias",
+    "bradlc.vscode-tailwindcss",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "vue.volar",
+    "lokalise.i18n-ally",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}
