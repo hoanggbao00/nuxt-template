@@ -1,20 +1,8 @@
 import tailwindcss from '@tailwindcss/vite'
-import { APP_CONFIG } from './lib/config'
 
 export default defineNuxtConfig({
   modules: ['@nuxt/eslint', '@nuxt/icon', 'shadcn-nuxt', 'nitro-cloudflare-dev'],
   devtools: { enabled: true },
-  app: {
-    head: {
-      titleTemplate: `%s | ${APP_CONFIG.AppName}`,
-      meta: [
-        {
-          name: 'description',
-          content: APP_CONFIG.AppDescription,
-        },
-      ],
-    },
-  },
   css: ['~/assets/css/tailwind.css'],
   runtimeConfig: {
     public: {
@@ -26,7 +14,7 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2025-05-15',
   nitro: {
-    preset: 'cloudflare_module',
+    preset: 'cloudflare-pages',
     cloudflare: {
       deployConfig: true,
       nodeCompat: true,
@@ -51,6 +39,6 @@ export default defineNuxtConfig({
      * Directory that the component lives in.
      * @default "./components/ui"
      */
-    componentDir: './components/ui',
+    componentDir: './app/components/ui',
   },
 })

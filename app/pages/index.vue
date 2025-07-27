@@ -1,11 +1,9 @@
 <script lang="ts" setup>
-const meta = getHomepageMeta()
-
-useHead(useMeta(meta))
+useHead(getHomepageMeta())
 </script>
 
 <template>
-  <div>
+  <div class="h-screen flex-center">
     <Button>Click me</Button>
   </div>
 </template>
