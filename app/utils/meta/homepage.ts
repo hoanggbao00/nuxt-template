@@ -3,7 +3,7 @@ import type { MetaObject } from 'nuxt/schema'
 const title = 'Homepage'
 const description = 'Description for homepage'
 
-export const getHomepageMeta = () => {
+export const getHomepageMeta = (): MetaObject => {
   return {
     title,
     meta: [
@@ -11,6 +11,6 @@ export const getHomepageMeta = () => {
         name: 'description',
         content: description,
       },
-    ] as MetaObject['meta'],
+    ],
   }
 }
